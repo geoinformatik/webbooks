@@ -11,4 +11,5 @@ The relational model stores data in relations (sets of n-tuples of attributes).
 
 ## The SQL SELECT Statement ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/sql_res/SQL_Slide7.JPG) 
 
-## And / Or ![](hhttps://geoinformatik.github.io/webbooks/GIS_VIZ/sql_res/SQL_Slide8.JPG)
+## And / Or ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/sql_res/SQL_Slide8.JPG)
+
