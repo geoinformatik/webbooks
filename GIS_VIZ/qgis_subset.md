@@ -1,4 +1,4 @@
-## Creating data subsets
+## <a id="Creating_data_subsets"/>Creating data subsets
 
 **There are typically two situations where you want to create a subset of the features in a data source :**
 
@@ -12,12 +12,12 @@ There are two somewhat **different approaches to subsisting data**
 
 2.Creating a **selection set**, typically used if you want to proses the subset in a different way than the rest of the data.
 
-## Layer filtering
+## <a id="Layer_filtering"/>Layer filtering
 
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/sql_res/Slide12.JPG)
 
-## Building a filter (query builder)
+## <a id="query_builder"/>Building a filter (query builder)
 
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/sql_res/Slide13.JPG)
 
-## Building a filter i QGIS
+## <a id="Building_filter"/>Building a filter i QGIS
