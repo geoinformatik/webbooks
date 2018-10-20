@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book</title>
+
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script type="text/javascript">
+        function start() {
+            $("#videoFrame").hide();
+
+            $.ajax({
+                type: "GET",
+                url: "https://raw.githubusercontent.com/geoinformatik/webbooks/master/GIS_VIZ/structur.xml",
+                cache: false,
+                dataType: "xml",
+                error: function(xhr, status, error) {
+                    console.log(error);
+                },
+                success: function(xmlDoc) {
+                    $xml = $(xmlDoc);
+                    //To avoid having one top element each child is added by it self
+                    $xml.find('book').children().each(function(index) {
+                        XmlTravers($("#index"), $(this))
+                    })
+                    SetEventHandlers();
+                }
+            })
+            // Open and close a section
+        }
+
+        //Sets the event handlers on all the navigational elements
+        function SetEventHandlers() {
+
+            $('.section').click(function(e) {
+                e.preventDefault();
+
+                var $this = $(this);
+                //console.log("Selection Click :" + $this.text());
+
+                if ($this.next().hasClass('show')) {
+                    $this.next().removeClass('show');
+                    $this.next().slideUp(350);
+                } else {
+                    $this.parent().parent().find('li .inner').removeClass('show');
+                    $this.parent().parent().find('li .inner').slideUp(350);
+                    $this.next().toggleClass('show');
+                    $this.next().slideToggle(350);
+                }
+
+            });
+
+            /*When a fragment is clicked the content is loaded using differant mthods depending on the data-contentType attribute. When the data is loaded the script checks to se if there are any tocRef points that cary a video referance. if so the video is startet and quepoints are ound to automat the syncronication of the tocRef's to the video.*/
+
+            $('.fragment').click(function(e) {
+                e.preventDefault();
+
+                // Reset all video event timers
+                quePoints = [];
+                ThisQuePoint = 0;
+                nextEventTime = -1;
+                thisEventTime = -1;
+                var $this = $(this);
+                // Inline HTML
+                if ($this.attr("data-contentType") == "inlineHTML") {
+                    $("#content").html($this.attr("data-content"))
+                }
+                //Remote HTML
+                else if ($this.attr("data-contentType") == "remoteHTML") {
+                    $.ajax({
+                        context: this,
+                        dataType: "html",
+                        url: $this.attr("data-content"),
+                        success: function(xmlDoc) {
+                            $("#content").html(xmlDoc);
+                        },
+                    })
+                }
+                // Inline Markdown
+                else if ($this.attr("data-contentType") == "inlineMD") {
+                    var converter = new showdown.Converter();
+                    $("#content").html(converter.makeHtml($this.attr("data-content")));
+                }
+                // Remote Mark Down
+                else if ($this.attr("data-contentType") == "remoteMD") {
+                    var converter = new showdown.Converter();
+                    $.ajax({
+                        context: this,
+                        dataType: "html",
+                        url: $this.attr("data-content"),
+                        success: function(xmlDoc) {
+                            $("#content").html(converter.makeHtml(xmlDoc));
+                        },
+                    })
+                    // 
+                };
+                //console.log("Click :" + $this.text());
+                if ($this.next().hasClass('show')) {
+                    $this.next().removeClass('show');
+                    $this.next().slideUp(350);
+                } else {
+                    $this.parent().parent().find('li .inner').removeClass('show');
+                    $this.parent().parent().find('li .inner').slideUp(350);
+                    $this.next().toggleClass('show');
+                    $this.next().slideToggle(350);
+                }
+                quePoints = $this.parent().find('.videoRef');
+                if (quePoints.length > 0) {
+     
+                    $($(quePoints[0]).parent().parent().children()[0]).toggleClass('active');
+                    StartVideoAtQuePoint(0);
+
+                } else {
+                    stopVideo()
+                }
+
+            });
+
+            // User click on a Table of content ellement
+            $('.tocRef').click(function(e) {
+                e.preventDefault();
+
+                var $this = $(this);
+                $this.parent().parent().find('.active').removeClass('active');
+                $this.toggleClass('active');
+                const element_to_scroll_to = document.getElementById($this.attr("data-anchor"));
+                element_to_scroll_to.scrollIntoView();
+                let localQuePoints = $this.parent().find('.videoRef');
+                if (localQuePoints.length > 0) {
+                    ThisQuePoint = findThisQuepoint($(localQuePoints[0]));
+                    startVideo($(localQuePoints[0]).attr("data-video"), $(localQuePoints[0]).attr("data-start"))
+
+                } else {
+                    stopVideo();
+                };
+            });
+        }
+
+        // Travers the input xml and add the nodes to the navigational section
+        function XmlTravers(rootElement, myXml) {
+            const nodeType = myXml.prop("nodeName");
+            //        let newElement = $('<div class="' + nodeType + '"></div>');
+
+
+            if (nodeType == "videoRef") {
+                let newElement = $('<div class="' + nodeType + '"></div>');
+                newElement.attr("data-provider", myXml.attr("servive"));
+                newElement.attr("data-video", myXml.attr("vid"));
+                newElement.attr("data-start", myXml.attr("start"));
+                newElement.attr("data-end", myXml.attr("end"));
+                rootElement.append(newElement);
+            } else {
+                let addProp = "";
+                let newElement = $('<a href="#"class="' + nodeType + '" >' + '</a>');
+                newElement.text(myXml.attr("title"))
+                if (nodeType == "fragment") {
+                    newElement.attr("data-contentType", myXml.attr("contentType"));
+                    newElement.attr("data-content", myXml.text());
+                } else if (nodeType == "tocRef") {
+                    newElement.attr("data-anchor", myXml.attr("anchor"));
+                }
+                newElement = $('<li/>').append(newElement)
+                rootElement.append(newElement);
+                if (myXml.children().length) {
+                    const newRoot = $("<ul class='inner'></ul>");
+                    newElement.append(newRoot);
+                    //rootElement = newRoot
+                    myXml.children().each(function(index) {
+                         XmlTravers(newRoot, $(this))
+                    })
+                }
+            }
+        }
+
+
+
+        function minimizeVideo($this) {
+            $this.toggleClass('show');
+        }
+    </script>
+
+</head>
+
+<body onload="start()">
+
+
+    <div>
+        <div class="row">
+            <div class="col">
+                <ul id="index" class="accordion">
+
+                </ul>
+            </div>
+            <div id="content" class="container col-9 mainContainer">
+
+            </div>
+        </div>
+    </div>
+    <div id="videoFrame" class="fixed">
+
+        <button type="button" class="close" aria-label="Close" onclick="minimizeVideo($(this).parent())">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div id=player></div>
+    </div>
+
+
+    <script>
+        var quePoints;
+        var player;
+        let ThisQuePoint = 0;
+        let nextEventTime = -1;
+        let thisEventTime = -1;
+
+
+        // 2. This code loads the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // 3. This function creates an <iframe> (and YouTube player)
+        //    after the API code downloads.
+
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '390',
+                width: '640',
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+            $("#videoFrame").hide();
+        }
+
+        // 4. The API will call this function when the video player is ready.
+        function onPlayerReady(event) {
+            //event.target.playVideo();
+        }
+
+        // 5. The API calls this function when the player's state changes.
+        //    The function indicates that when playing a video (state=1),
+        //    the player should play for six seconds and then stop.
+        var done = false;
+
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.PLAYING && !done) {
+                //    setTimeout(stopVideo, 6000);
+                done = true;
+            }
+        }
+
+        function setEventTimes(quepoint) {
+            thisEventTime = $(quePoints[quepoint]).attr("data-start");
+            if ($(quePoints[quepoint]).attr("data-end")) {
+                nextEventTime = $(quePoints[quepoint]).attr("data-end")
+             } else {
+                  nextEventTime = $(quePoints[quepoint + 1]).attr("data-start");
+            }
+
+        }
+
+        function stopVideo() {
+            player.stopVideo();
+            clearInterval(time_update_interval);
+            $("#videoFrame").hide();
+        }
+
+        function startVideo(video, pos) {
+            player.loadVideoById(video, pos),
+                time_update_interval = setInterval(function() {
+                    updateSectionScroll();
+                }, 1000);
+            $("#videoFrame").show();
+        }
+
+        //Sets the video to start playing from a given qpoint in the quePoints list
+        function StartVideoAtQuePoint(quePoiunt) {
+            startVideo($(quePoints[quePoiunt]).attr("data-video"), $(quePoints[quePoiunt]).attr("data-start"));
+            setEventTimes(quePoiunt);
+        }
+
+
+        //Find the location of a quepoint based on the video and start time
+        function findThisQuepoint(quepoint) {
+            const video = quepoint.attr("data-video")
+            const startTime = quepoint.attr("data-start")
+            let i = 0;
+            while (i < quePoints.length) {
+                if ($(quePoints[i]).attr("data-video") == video && $(quePoints[i]).attr("data-start") == startTime) {
+                    break;
+                }
+                ++i
+            }
+            return i;
+        }
+
+        function FindQuePoint(video, time) {
+             let i = quePoints.length - 1;
+            while (i > 0) {
+                if ($(quePoints[i]).attr("data-video") == video && $(quePoints[i]).attr("data-start") <= time) {
+                    break;
+                }
+                --i;
+            }
+            return i;
+        }
+
+        //On a second pased event test to see if the quepoint should be moved to mach the location in the video
+
+        function updateSectionScroll() {
+            let i = 0;
+             if (player.getPlayerState() == 0) {
+                if (ThisQuePoint + 1 < quePoints.length) {
+                    StartVideoAtQuePoint(hisQuePoint + 1)
+                } else {
+                    stopVideo();
+                }
+            } else {
+                const time = player.getCurrentTime()
+                // Test id the quepoint needs moving due to video play
+                if (nextEventTime <= time || thisEventTime > time) {
+                    $($(quePoints[ThisQuePoint]).parent().parent().children()[0]).removeClass('active');
+                    // test for if it is just the next quepoint
+                    ThisQuePoint = FindQuePoint($(quePoints[ThisQuePoint]).attr("data-video"), time);
+
+                    const thisTocRef = $(quePoints[ThisQuePoint]).parent().parent().children()[0];
+                    $(thisTocRef).toggleClass('active');
+                    document.getElementById($(thisTocRef).attr("data-anchor")).scrollIntoView();
+                    setEventTimes(ThisQuePoint);
+                 }
+            }
+
+
+        }
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.js"></script>
+
+
+
+<!--    <script src="js/index.js"></script>-->
+
+
+
+
+</body>
+
+</html>
