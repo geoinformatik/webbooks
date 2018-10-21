@@ -22,7 +22,7 @@ Which environment to use:
 
 ## Create and edit attributes in the Attribute table
 
-![](http://geoinformatik.dk/video2/images/Slide22.JPG)
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/sql_res/wwa_22.JPG)
 
 ## Create and edit attributes in propperties field table
 
@@ -39,9 +39,9 @@ Both types of attributes must be declared as a data type and size:
 *   Date
 *   Date time (SpatiaLite)
 
-![](http://geoinformatik.dk/video2/images/Slide23.JPG)
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/sql_res/wwa_23.JPG)
 
 ## The Field calculator
 
-![](http://geoinformatik.dk/video2/images/Slide23.JPG)
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/sql_res/wwa_23.JPG)
 
