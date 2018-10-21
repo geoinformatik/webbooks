@@ -1,21 +1,21 @@
-## The selection set
+## <a id ="selectionSet"/>The selection set
 
-## The selection set (Graphical Selection in QGIS)
+## <a id ="GraphicalSelection"/>The selection set (Graphical Selection in QGIS)
 
-![](http://geoinformatik.dk/video2/images/Slide14.JPG)
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/sql_res/ss_14.JPG)
 
-## The selection set - Select by Expression
+## <a id ="SelectByExpression"/>The selection set - Select by Expression
 
-![](http://geoinformatik.dk/video2/images/Slide15.JPG)
+![](http://geoinformatik.github.io/webbooks/GIS_VIZ/sql_res/ss_15.JPG)
 
-## The selection set - Select by Expression in QGIS
+## <a id ="SelecByExpressionQGIS"/>The selection set - Select by Expression in QGIS
 
-![](http://geoinformatik.dk/video2/images/Slide15.JPG)
+![](http://geoinformatik.github.io/webbooks/GIS_VIZ/sql_res/ss_15.JPG)
 
-## Combining selection sets
+## <a id ="CombiningSelectionSets"/>Combining selection sets
 
-![](http://geoinformatik.dk/video2/images/Slide17.JPG)
+![](http://geoinformatik.github.io/webbooks/GIS_VIZ/sql_res/ss_17.JPG)
 
-## The use of selection sets
+## <a id ="TheUseOfSelectionSets"/>The use of selection sets
 
-![](http://geoinformatik.dk/video2/images/Slide18.JPG)
+![](http://geoinformatik.github.io/webbooks/GIS_VIZ/sql_res/ss_18.JPG)
