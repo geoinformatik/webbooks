@@ -1,4 +1,4 @@
-## Working with attributes
+## <a id="WorkingWithAttributes"/>Working with attributes
 
 *   Creating new attributes
 *   Deleting attributes
@@ -18,13 +18,13 @@ Which environment to use:
 
 3.The fields tab is much quicker to use on large feature classes and perhaps also less cluttered
 
-## The Attribute table filter and naviggate
+## <a id="TheAttributeTableFilterNaviggate"/>The Attribute table filter and naviggate
 
-## Create and edit attributes in the Attribute table
+## <a id="TheAttributeTableCreateEditAttributes"/>Create and edit attributes in the Attribute table
 
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/sql_res/wwa_22.JPG)
 
-## Create and edit attributes in propperties field table
+## <a id="proppertiesCreateEditAttributes"/>Create and edit attributes in propperties field table
 
 Qgis operates with two types of attributes:
 
@@ -41,7 +41,7 @@ Both types of attributes must be declared as a data type and size:
 
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/sql_res/wwa_23.JPG)
 
-## The Field calculator
+## <a id="TheFieldCalculato"/>The Field calculator
 
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/sql_res/wwa_23.JPG)
 
