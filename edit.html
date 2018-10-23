@@ -1,187 +1,200 @@
 <!doctype html>
 
 <html lang="en">
-<head> <meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
     <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
-    <title>The HTML5 Herald</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-            crossorigin="anonymous"></script>
+    <title>The Web_book structur editor</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/xonomy/xonomy.js"></script>
-    <link type="text/css" rel="stylesheet" href="/xonomy/xonomy.css"/>
-    <link rel="stylesheet" href="jquery-ui.min.css">
-    <script src="external/jquery/jquery.js"></script>
-    <script src="jquery-ui.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/xonomy/xonomy.css" />
+
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+
     <script type="text/javascript">
         function XmlSubmit() {
-            //$( "#result" ).append( Xonomy.harvest());
-            alert(Xonomy.harvest());
+            $("#result").text(Xonomy.harvest())
         }
+
+
         function start() {
             Xonomy.setMode("laic");
-             var xml="<book title='GIS book'></book>";
-             var editor=document.getElementById("editor");
+            var xml = "<book title='GIS book'></book>";
+            var editor = document.getElementById("editor");
             $.ajax({
-            type: "GET",
-            url: "https://raw.githubusercontent.com/geoinformatik/webbook/master/structur.xml",
-            cache: false,
-            dataType: "xml",
-            success: function(Lxml) {
-                xml = Lxml
-                console.log(Lxml)
-                 Xonomy.render(xml, editor, docSpec);
-                }   
-            }
-            )
-  
-           
-           
-        
-          } 
-    var docSpec={
-        elements: {
-            "book": {
-                menu: [{
-                    caption: "Append an <section>",
-                    action: Xonomy.newElementChild,
-                    actionParameter: "<section title=''/>"
-                },{
-                    caption: "Append an <fragment>",
-                    action: Xonomy.newElementChild,
-                    actionParameter: "<fragment title='' type=''>...</fragment>"
-                }],
-                attributes: {
-                    "title":{
-                        asker: Xonomy.askString,
-                    },
+                type: "GET",
+                url: "https://raw.githubusercontent.com/geoinformatik/webbooks/master/GIS_VIZ/structur.xml",
+                cache: false,
+                dataType: "xml",
+                success: function(Lxml) {
+                    xml = Lxml
+                    console.log(Lxml)
+                    Xonomy.render(xml, editor, docSpec);
                 }
-            },
-             "section": {
-                menu: [ {caption: "Delete this <section>",
-                        action: Xonomy.deleteElement
-                    }, {caption: "New <section > before this",
-                        action: Xonomy.newElementBefore,
-                        actionParameter:"<section title=''/>"
-                    }, {caption: "New <section> after this",
-                        action: Xonomy.newElementAfter,
+            })
+
+        }
+        var docSpec = {
+            elements: {
+                "book": {
+                    menu: [{
+                        caption: "Append an <section>",
+                        action: Xonomy.newElementChild,
                         actionParameter: "<section title=''/>"
-                    },{
+                    }, {
                         caption: "Append an <fragment>",
                         action: Xonomy.newElementChild,
-                        actionParameter: "<fragment title='' type=''>...</fragment>"
-                }
-                      ],
-                canDropTo: ["book", "section"],
-                attributes: {
-                     "title": {
-                        asker: Xonomy.askString,
-                        },             
-                }, 
-            },
-             "fragment": {
-                menu: [{caption: "Delete this <fragment>",
+                        actionParameter: "<fragment title='' contentType=''>...</fragment>"
+                    }],
+                    attributes: {
+                        "title": {
+                            asker: Xonomy.askString,
+                        },
+                    }
+                },
+                "section": {
+                    menu: [{
+                        caption: "Delete this <section>",
                         action: Xonomy.deleteElement
-                    }, {caption: "New <fragment> before this",
-                        action: Xonomy.newElementBefore,
-                        actionParameter: "<fragment title='' type=''>...</fragment>"
-                    }, {caption: "New <fragment> after this",
-                        action: Xonomy.newElementAfter,
-                        actionParameter: "<fragment title='' type=''>...</fragment>"
-                    }, {caption: "New <section> before this",
+                    }, {
+                        caption: "New <section > before this",
                         action: Xonomy.newElementBefore,
                         actionParameter: "<section title=''/>"
-                    }, {caption: "New <section> after this",
+                    }, {
+                        caption: "New <section> after this",
                         action: Xonomy.newElementAfter,
                         actionParameter: "<section title=''/>"
-                     }, {
+                    }, {
+                        caption: "Append an <fragment>",
+                        action: Xonomy.newElementChild,
+                        actionParameter: "<fragment title='' contentType=''>...</fragment>"
+                    }],
+                    canDropTo: ["book", "section"],
+                    attributes: {
+                        "title": {
+                            asker: Xonomy.askString,
+                        },
+                    },
+                },
+                "fragment": {
+                    menu: [{
+                        caption: "Delete this <fragment>",
+                        action: Xonomy.deleteElement
+                    }, {
+                        caption: "New <fragment> before this",
+                        action: Xonomy.newElementBefore,
+                        actionParameter: "<fragment title='' contentType=''>...</fragment>"
+                    }, {
+                        caption: "New <fragment> after this",
+                        action: Xonomy.newElementAfter,
+                        actionParameter: "<fragment title='' contentType=''>...</fragment>"
+                    }, {
+                        caption: "New <section> before this",
+                        action: Xonomy.newElementBefore,
+                        actionParameter: "<section title=''/>"
+                    }, {
+                        caption: "New <section> after this",
+                        action: Xonomy.newElementAfter,
+                        actionParameter: "<section title=''/>"
+                    }, {
                         caption: "Append an <tocRef>",
                         action: Xonomy.newElementChild,
-                        actionParameter: "<tocRef title='' anchor=''/>"    
-                    }],
-                canDropTo: ["book", "section"],
-                attributes: {
-                    "title": {
-                        asker: Xonomy.askString,
-                            },
-                    "type": {
-                        asker: Xonomy.askPicklist,
-                        askerParameter: [{value: "inlineMD", caption: "Inline Markdown"},
-                                         {value: "remoteMD", caption: "Remote Markdown"},
-                                         {value: "inlineHTML", caption: "Inline HTML"},
-                                         {value: "remoteHTML", caption: "Remote HTML"}
-                                         ]      
-                            },
-                },
-                asker: Xonomy.askLongString          
-            },
-             "tocRef":{      
-                    menu: [ {caption: "Delete this <tocRef>",
-                        action: Xonomy.deleteElement
-                    }, {caption: "New <tocRef> before this",
-                       action: Xonomy.newElementBefore,
                         actionParameter: "<tocRef title='' anchor=''/>"
-                    }, {caption: "New <tocRef> after this",
+                    }],
+                    canDropTo: ["book", "section"],
+                    attributes: {
+                        "title": {
+                            asker: Xonomy.askString,
+                        },
+                        "contentType": {
+                            asker: Xonomy.askPicklist,
+                            askerParameter: [{
+                                    value: "inlineMD",
+                                    caption: "Inline Markdown"
+                                },
+                                {
+                                    value: "remoteMD",
+                                    caption: "Remote Markdown"
+                                },
+                                {
+                                    value: "inlineHTML",
+                                    caption: "Inline HTML"
+                                },
+                                {
+                                    value: "remoteHTML",
+                                    caption: "Remote HTML"
+                                }
+                            ]
+                        },
+                    },
+                    asker: Xonomy.askLongString
+                },
+                "tocRef": {
+                    menu: [{
+                        caption: "Delete this <tocRef>",
+                        action: Xonomy.deleteElement
+                    }, {
+                        caption: "New <tocRef> before this",
+                        action: Xonomy.newElementBefore,
+                        actionParameter: "<tocRef title='' anchor=''/>"
+                    }, {
+                        caption: "New <tocRef> after this",
                         action: Xonomy.newElementAfter,
                         actionParameter: "<tocRef title='' anchor=''/>"
-                    },{
+                    }, {
                         caption: "Append an <videoRef>",
                         action: Xonomy.newElementChild,
                         actionParameter: "<videoRef servive='youTube' vid='' start='0' end='11'/>"
                     }],
                     canDropTo: ["fragment"],
                     attributes: {
-                    "title": {
-                        asker: Xonomy.askString,
-                            },
-                    "anchor": {
-                            asker: Xonomy.askString, 
-                            }
+                        "title": {
+                            asker: Xonomy.askString,
+                        },
+                        "anchor": {
+                            asker: Xonomy.askString,
+                        }
                     }
-            }, 
-            "videoRef":{
-                        menu: [ {caption: "Delete this <videoRef>",
+                },
+                "videoRef": {
+                    menu: [{
+                        caption: "Delete this <videoRef>",
                         action: Xonomy.deleteElement
                     }],
                     attributes: {
                         "servive": {
                             asker: Xonomy.askPicklist,
-                            askerParameter: ["yuoTybe","VideoRUC"]
-                            },
+                            askerParameter: ["yuoTybe", "VideoRUC"]
+                        },
                         "vid": {
-                            asker: Xonomy.askString, 
-                            },
-                        "start":{
-                            asker: Xonomy.askString, 
-                            },
-                        "end":{
-                            asker: Xonomy.askString, 
+                            asker: Xonomy.askString,
+                        },
+                        "start": {
+                            asker: Xonomy.askString,
+                        },
+                        "end": {
+                            asker: Xonomy.askString,
                         }
                     }
+                }
+            },
+            onchange: function() {
+                console.log("I been changed now!")
+            },
+            validate: function(obj) {
+                console.log("I be validatin' now!")
             }
-        },
-        onchange: function(){
-            console.log("I been changed now!")
-        },
-        validate: function(obj){
-            console.log("I be validatin' now!")
-        }
-    };
-</script>
-        
+        };
+    </script>
+
 </head>
 
 <body onload="start()">
     <div id="editor"></div>
-    <button type="button" onclick="XmlSubmit()">Click Me!</button>
+    <button type="button" onclick="XmlSubmit()">Display xml!</button>
+
     <div id="result"></div>
-	<div class="accordion-expand-holder">
-    <button type="button" class="open">Expand all</button>
-    <button type="button" class="close">Collapse all</button>
-         <div id="accordion">
-  
-    </div>
-        </div>
-  <script src="acordion.js"></script>
 </body>
 </html>
