@@ -3,9 +3,12 @@ In this section we will look at some of the basic concepts relating to visual co
 Some common concepts to start out with
 
 * A (data) visualisation is a single map, chart, diagram or image 
+
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/visualisation.jpg)
 
-* A visual narrative typically consists of one or more related visualisations some text components that collectively enables the user to follow a narrated data exploration. ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/visual_narativ.jpg)
+* A visual narrative typically consists of one or more related visualisations some text components that collectively enables the user to follow a narrated data exploration. 
+
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/visual_narativ.jpg)
 
 * Infographics is typically heavier narrated and less explorative in the nature.
 
