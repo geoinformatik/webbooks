@@ -5,3 +5,4 @@ Some common concepts to start out with
 * A (data) visualisation is a single map, chart, diagram or image 
 * A visual narrative typically consists of one or more related visualisations some text components that collectively enables the user to follow a narrated data exploration.
 * Infographics is typically heavier narrated and less explorative in the nature.
+![]((https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/visualisation.jpg)
