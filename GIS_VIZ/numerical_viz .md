@@ -50,4 +50,8 @@ Linear Regression Y2 = 3 + 0.5 X
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/graph_set%20A-D.png)
 
 
+# What are the characteristics of a good visualisation?
+1 ExpressiveThe truth, the hole truth and nothing but the truth.
+2 EfficientFocus the attention on the important aspects.
+3 A good visualisation is the right tool for the job.
 
