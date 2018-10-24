@@ -1,0 +1,150 @@
+<h3 id="overview-">Overview :</h3>
+<ul>
+<li>Ways of communicating numbers</li>
+<li>Why visualize data</li>
+<li>What are the characteristics of a good visualisation?</li>
+<li>What are the characteristics of a good Visual Narrative ?</li>
+<li>The purposeful conversion of numbers to visual narratives.</li>
+</ul>
+<h3 id="four-ways-to-communicate-numbers">Four ways to communicate numbers</h3>
+<ul>
+<li>Tabular form</li>
+<li>Summery statisticsMean, variance etc.</li>
+<li>Inferential statisticsIdentifying significant differences</li>
+<li>Visualization (Visual narrative)</li>
+</ul>
+<h3 id="why-data-visualisation">Why Data Visualisation</h3>
+<ul>
+<li>The brain is a fantastic visual pattern processing machine.</li>
+<li>We are able to effortless detect minute variations from a patten</li>
+<li>Visualisation is a &rdquo;effective way of laying open the data to display the unanticipated</li>
+</ul>
+<p><img src="https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/num_viz1.jpg" alt="" /></p>
+<h3 id="laying-data-open-to-display-the-unanticipated">Laying data open to display the unanticipated.</h3>
+<blockquote>
+<p>(Anscombe 1973)</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Set A</th>
+<th>Set B</th>
+<th>Set C</th>
+<th>Set D</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X - Y</td>
+<td>X - Y</td>
+<td>X - Y</td>
+<td>X - Y</td>
+</tr>
+<tr>
+<td>10 - 8,04</td>
+<td>10 - 9,14</td>
+<td>10 - 7,46</td>
+<td>8 - 6,58</td>
+</tr>
+<tr>
+<td>8 - 6,95</td>
+<td>8 -8,14</td>
+<td>8 - 6,77</td>
+<td>8 -5,76</td>
+</tr>
+<tr>
+<td>13 - 7,58</td>
+<td>13 - 8,74</td>
+<td>13 - 12,74</td>
+<td>8 -7,71</td>
+</tr>
+<tr>
+<td>9 - 8,81</td>
+<td>9 - 8,77</td>
+<td>9-7,11</td>
+<td>8-8,84</td>
+</tr>
+<tr>
+<td>11 - 8,33</td>
+<td>11 -9,26</td>
+<td>11 - 7,81</td>
+<td>8 - 8,47</td>
+</tr>
+<tr>
+<td>14 - 9,96</td>
+<td>14 -8,1</td>
+<td>14 - 8,84</td>
+<td>8 - 7,04</td>
+</tr>
+<tr>
+<td>6 - 7,24</td>
+<td>6 - 6,13</td>
+<td>6 - 6,08</td>
+<td>8 -5,25</td>
+</tr>
+<tr>
+<td>4 - 4,26</td>
+<td>4 - 3,1</td>
+<td>4 - 5,39</td>
+<td>19 - 12,5</td>
+</tr>
+<tr>
+<td>12 - 10,84</td>
+<td>12 - 9,11</td>
+<td>12 - 8,15</td>
+<td>8 - 5,56</td>
+</tr>
+<tr>
+<td>7 - 4,82</td>
+<td>7 - 7,26</td>
+<td>7 - 6,42</td>
+<td>8 - 7,91</td>
+</tr>
+<tr>
+<td>5 - 5,68</td>
+<td>5 - 4,74</td>
+<td>5 - 5,73</td>
+<td>8 - 6,89</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Stat</th>
+<th>X</th>
+<th>Y</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mean</td>
+<td>9.0</td>
+<td>7.5</td>
+</tr>
+<tr>
+<td>StdVar</td>
+<td>3.317</td>
+<td>2.03</td>
+</tr>
+</tbody>
+</table>
+<p>Linear Regression Y2 = 3 + 0.5 X</p>
+<p>(R2 = 0.67)</p>
+<p><img src="https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/graph_set%20A-D.png" alt="" /></p>
+<h3 id="what-are-the-characteristics-of-a-good-visualisation">What are the characteristics of a good visualisation?</h3>
+<ol>
+<li>Expressive The truth, the hole truth and nothing but the truth.</li>
+<li>Efficient Focus the attention on the important aspects.</li>
+<li>A good visualisation is the right tool for the job.</li>
+</ol>
+<p><img src="https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/graph.jpg" alt="" /></p>
+<h3 id="what-are-the-characteristics-of-a-good-visual-narrative">What are the characteristics of a good visual narrative?</h3>
+<ul>
+<li>Engages the reader.</li>
+<li>Is esthetical pleasing.</li>
+<li>Should be memorable.</li>
+<li>Enables the reader to explore different aspects of the date by combining multiple visualisations.</li>
+<li>Not compromising the rules of a good visualisation</li>
+</ul>
+<p><img src="https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/diamands.jpg" alt="" /></p>
