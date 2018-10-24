@@ -96,7 +96,7 @@
                     var converter = new showdown.Converter();
                     $.ajax({
                         context: this,
-                        dataType: "html",
+                        dataType: "text",
                         url: $this.attr("data-content"),
                         success: function(xmlDoc) {
                             $("#content").html(converter.makeHtml(xmlDoc));
