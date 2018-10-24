@@ -21,6 +21,7 @@
 # Laying data open to display the unanticipated.
 > (Anscombe 1973)
 
+
 Set A |Set B| Set C | Set D
 :---:|:---:|:---:|:---:
 X - Y| X - Y| X - Y| X - Y
