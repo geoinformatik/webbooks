@@ -23,11 +23,11 @@ Some common concepts to start out with
 * Resources
   * Time
   * Communicative and analytic skills
---* Knowledge
---* Data processing and visualisation tools
+  * Knowledge
+  * Data processing and visualisation tools
 * Purpose / Intent
---* Data exploration
---* Arguing a specific view (Closing discussions)
---* Pointing to a issue (Opening discussions)
+  * Data exploration
+  * Arguing a specific view (Closing discussions)
+  * Pointing to a issue (Opening discussions)
 
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/designProcess1.png)
