@@ -1,3 +1,7 @@
+A | B
+---|---
+C | D
+
 # Overview :
 * Ways of communicating numbers
 * Why visualize data
