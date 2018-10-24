@@ -42,9 +42,12 @@ Mean|9.0|7.5
 StdVar |3.317|2.03
 
 Linear Regression Y2 = 3 + 0.5 X
+
+
 (R2 = 0.67)
 
 
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/graph_set A-D.png)
 
 
 
