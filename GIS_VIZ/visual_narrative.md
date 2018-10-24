@@ -13,3 +13,21 @@ Some common concepts to start out with
 * Infographics is typically heavier narrated and less explorative in the nature.
 
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/infographics.jpg)
+
+
+# The process of designing a visual narrative
+
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/designProcess_large.png)
+
+# You
+* Resources
+--* Time
+--* Communicative and analytic skills
+--* Knowledge
+--* Data processing and visualisation tools
+* Purpose / Intent
+--* Data exploration
+--* Arguing a specific view (Closing discussions)
+--* Pointing to a issue (Opening discussions)
+
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/designProcess1.png)
