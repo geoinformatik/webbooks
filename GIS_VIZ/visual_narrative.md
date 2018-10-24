@@ -73,6 +73,7 @@ Some common concepts to start out with
 
 
 # Data (in this context)
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/DesignProcesStep6.png)
 * Data is the symbolic representation of information
 * Types of data (User perspective):
   * Atomic values
@@ -84,11 +85,9 @@ Some common concepts to start out with
     * Data where the information is indirectly represented i.e. a photograph of who where present at a event
  * Presence of time or space, connectivity (network)
 
-
-![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/DesignProcesStep5.png)
-
 # The visual narrative
-![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/DesignProcesStep5.png)
+
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/DesignProcesStep7.png)
 * How do you think the target audience will want to “reader” (use) your visual narrative. 
 * Never lie, and remember that however you design your narrative you will be leading the reader in a specific direction. 
 
