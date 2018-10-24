@@ -47,7 +47,7 @@ Linear Regression Y2 = 3 + 0.5 X
 (R2 = 0.67)
 
 
-![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/graph_set A-D.png)
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/graph_set%20A-D.png)
 
 
 
