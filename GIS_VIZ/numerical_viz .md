@@ -51,7 +51,21 @@ Linear Regression Y2 = 3 + 0.5 X
 
 
 # What are the characteristics of a good visualisation?
-1. ExpressiveThe truth, the hole truth and nothing but the truth.
-2. EfficientFocus the attention on the important aspects.
+1. Expressive The truth, the hole truth and nothing but the truth.
+2. Efficient Focus the attention on the important aspects.
 3. A good visualisation is the right tool for the job.
+
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/graph.jpg)
+
+
+# What are the characteristics of a good visual narrative?
+* Engages the reader.
+* Is esthetical pleasing.
+* Should be memorable.
+* Enables the reader to explore different aspects of the date by combining multiple visualisations.
+* Not compromising the rules of a good visualisation
+
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/diamands.jpg)
+
+
 
