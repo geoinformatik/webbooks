@@ -21,7 +21,7 @@ Some common concepts to start out with
 
 # You
 * Resources
---* Time
+..* Time
 --* Communicative and analytic skills
 --* Knowledge
 --* Data processing and visualisation tools
