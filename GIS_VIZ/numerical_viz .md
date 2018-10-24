@@ -11,8 +11,8 @@ C | D
 
 # Four ways to communicate numbers
 * Tabular form
-* Summery statisticsMean, variance etc.
-* Inferential statisticsIdentifying significant differences
+* Summery statistics Mean, variance etc.
+* Inferential statistics Identifying significant differences
 * Visualization (Visual narrative)
 
 # Why Data Visualisation
