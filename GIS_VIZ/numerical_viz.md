@@ -431,7 +431,28 @@ There are several classical texts that addresses the question of what is a good 
   * Bifocal over white : ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/Bifocal_WhteSchemas.jpg)
   * Mono hue schemas : ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/MonoHuelSchemas.jpg)
   
-For example on colour schemas on maps see http://colorbrewer2.org/
+For example on colour schemas on maps see <http://colorbrewer2.org/>
+
+## Graphical retina (visual) variables
+> Semiologi of Graphics J. Bertin  1967
+
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/visualVariable.jpg)
+*  X,Y location (2PD)
+*  Shape (Sh)
+*  Size (Si)
+*  Value (V)
+*  Texture (T)
+*  Colour hue (C)
+*  Orientation (Or)
 
 
+## Characteristics of retina variables
+> Semiologi of Graphics J. Bertin  1967
 
+Characteristics governing the use of retina variables
+*  Selective Distinguish a class objects from the others
+*  Associative  Identify all objects of the same class
+*  Order  Identify all steps of the order, min to max
+*  Quantitative numerically identify the distance between objects
+*  Length is a property of all characteristics specifying the number of possible classes
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/visualVariableCompar.jpg)
