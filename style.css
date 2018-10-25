@@ -32,26 +32,26 @@
         font-size: 2.5em;
     }
 
-    ul {
+   .accordion ul {
         list-style: none;
         padding-left: 0.1em;
     }
 
-    ul .inner {
+   .accordion ul .inner {
         padding-left: 1em;
         overflow: hidden;
         display: none;
     }
 
-    ul .inner.show {
+  .accordion  ul .inner.show {
         /*display: block;*/
     }
 
-    ul li {
+   .accordion ul li {
         margin: 0.5em 0;
     }
 
-    ul li a.fragment {
+    .accordion a.fragment {
         /*  width: 100%;*/
         display: block;
         background: rgba(150, 0, 0, 0.78);
@@ -61,7 +61,7 @@
         transition: background 0.3s ease;
     }
 
-    ul li a.tocRef.active {
+   .accordion a.tocRef.active {
         /*  width: 100%;*/
         display: block;
         background: rgba(255, 150, 0, 0.78);
@@ -71,7 +71,7 @@
         transition: background 0.3s ease;
     }
 
-    ul li a.tocRef {
+   .accordion a.tocRef {
         /*  width: 100%;*/
         display: block;
         background: rgba(50, 150, 0, 0.78);
