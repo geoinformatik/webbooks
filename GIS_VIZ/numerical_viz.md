@@ -487,9 +487,9 @@ A visualizations should  express all the facts in the set of data, and only the 
 ## What's wrong ?
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/wrong.jpg)
 
-1  Ontology (mix of desktop and phones)
-2  Chart :Stacked lengths (type5)
-3  Chart: % in a rapidly growing dataset.
+1.  Ontology (mix of desktop and phones)
+2.  Chart :Stacked lengths (type5)
+3.  Chart: % in a rapidly growing dataset.
 
 
 
