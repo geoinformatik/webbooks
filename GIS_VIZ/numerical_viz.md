@@ -22,26 +22,358 @@
 > (Anscombe 1973)
 
 
-Set A |Set B| Set C | Set D
-:---:|:---:|:---:|:---:
-X - Y| X - Y| X - Y| X - Y
-10 - 8,04| 10 - 9,14| 10 - 7,46| 8 - 6,58|
-8 - 6,95|8  -8,14|8 - 6,77|8 -5,76
-13 - 7,58|13 - 8,74|13 - 12,74|8 -7,71
-9 - 8,81|9 - 8,77|9-7,11|8-8,84
-11 - 8,33|11 -9,26|11 - 7,81|8 - 8,47
-14 - 9,96|14 -8,1|14 - 8,84| 8 - 7,04
-6 - 7,24|6 - 6,13|6 - 6,08|8 -5,25
-4 - 4,26|4 - 3,1|4 - 5,39|19 - 12,5
-12 - 10,84|12 - 9,11|12 - 8,15|8 - 5,56
-7 - 4,82|7 - 7,26|7 - 6,42|8 - 7,91
-5 - 5,68|5 - 4,74|5 - 5,73|8 - 6,89
-
-Stat|X|Y
----|---|---
-Mean|9.0|7.5 
-StdVar |3.317|2.03
-
+<table style="border-collapse: collapse; width: 347px; height: 638px;" border="1px">
+<tbody>
+<tr>
+<td style="width: 90px; text-align: center;" colspan="2">
+<p><strong>Set A</strong></p>
+</td>
+<td style="width: 70px; text-align: center;" colspan="2">
+<p><strong>Set B</strong></p>
+</td>
+<td style="width: 68px; text-align: center;" colspan="2">
+<p><strong>Set C</strong></p>
+</td>
+<td style="width: 98px; text-align: center;" colspan="2">
+<p><strong>Set D</strong></p>
+</td>
+</tr>
+<tr>
+<td style="width: 49px;">
+<p>X</p>
+</td>
+<td style="width: 41px;">
+<p>Y</p>
+</td>
+<td style="width: 30px;">
+<p>X</p>
+</td>
+<td style="width: 40px;">
+<p>Y</p>
+</td>
+<td style="width: 33px;">
+<p>X</p>
+</td>
+<td style="width: 35px;">
+<p>Y</p>
+</td>
+<td style="width: 41px;">
+<p>X</p>
+</td>
+<td style="width: 57px;">
+<p>Y</p>
+</td>
+</tr>
+<tr>
+<td style="width: 49px;">
+<p>10</p>
+</td>
+<td style="width: 41px;">
+<p>8,04</p>
+</td>
+<td style="width: 30px;">
+<p>10</p>
+</td>
+<td style="width: 40px;">
+<p>9,14</p>
+</td>
+<td style="width: 33px;">
+<p>10</p>
+</td>
+<td style="width: 35px;">
+<p>7,46</p>
+</td>
+<td style="width: 41px;">
+<p>8</p>
+</td>
+<td style="width: 57px;">
+<p>6,58</p>
+</td>
+</tr>
+<tr>
+<td style="width: 49px;">
+<p>8</p>
+</td>
+<td style="width: 41px;">
+<p>6,95</p>
+</td>
+<td style="width: 30px;">
+<p>8</p>
+</td>
+<td style="width: 40px;">
+<p>8,14</p>
+</td>
+<td style="width: 33px;">
+<p>8</p>
+</td>
+<td style="width: 35px;">
+<p>6,77</p>
+</td>
+<td style="width: 41px;">
+<p>8</p>
+</td>
+<td style="width: 57px;">
+<p>5,76</p>
+</td>
+</tr>
+<tr>
+<td style="width: 49px;">
+<p>13</p>
+</td>
+<td style="width: 41px;">
+<p>7,58</p>
+</td>
+<td style="width: 30px;">
+<p>13</p>
+</td>
+<td style="width: 40px;">
+<p>8,74</p>
+</td>
+<td style="width: 33px;">
+<p>13</p>
+</td>
+<td style="width: 35px;">
+<p>12,74</p>
+</td>
+<td style="width: 41px;">
+<p>8</p>
+</td>
+<td style="width: 57px;">
+<p>7,71</p>
+</td>
+</tr>
+<tr>
+<td style="width: 49px;">
+<p>9</p>
+</td>
+<td style="width: 41px;">
+<p>8,81</p>
+</td>
+<td style="width: 30px;">
+<p>9</p>
+</td>
+<td style="width: 40px;">
+<p>8,77</p>
+</td>
+<td style="width: 33px;">
+<p>9</p>
+</td>
+<td style="width: 35px;">
+<p>7,11</p>
+</td>
+<td style="width: 41px;">
+<p>8</p>
+</td>
+<td style="width: 57px;">
+<p>8,84</p>
+</td>
+</tr>
+<tr>
+<td style="width: 49px;">
+<p>11</p>
+</td>
+<td style="width: 41px;">
+<p>8,33</p>
+</td>
+<td style="width: 30px;">
+<p>11</p>
+</td>
+<td style="width: 40px;">
+<p>9,26</p>
+</td>
+<td style="width: 33px;">
+<p>11</p>
+</td>
+<td style="width: 35px;">
+<p>7,81</p>
+</td>
+<td style="width: 41px;">
+<p>8</p>
+</td>
+<td style="width: 57px;">
+<p>8,47</p>
+</td>
+</tr>
+<tr>
+<td style="width: 49px;">
+<p>14</p>
+</td>
+<td style="width: 41px;">
+<p>9,96</p>
+</td>
+<td style="width: 30px;">
+<p>14</p>
+</td>
+<td style="width: 40px;">
+<p>8,1</p>
+</td>
+<td style="width: 33px;">
+<p>14</p>
+</td>
+<td style="width: 35px;">
+<p>8,84</p>
+</td>
+<td style="width: 41px;">
+<p>8</p>
+</td>
+<td style="width: 57px;">
+<p>7,04</p>
+</td>
+</tr>
+<tr>
+<td style="width: 49px;">
+<p>6</p>
+</td>
+<td style="width: 41px;">
+<p>7,24</p>
+</td>
+<td style="width: 30px;">
+<p>6</p>
+</td>
+<td style="width: 40px;">
+<p>6,13</p>
+</td>
+<td style="width: 33px;">
+<p>6</p>
+</td>
+<td style="width: 35px;">
+<p>6,08</p>
+</td>
+<td style="width: 41px;">
+<p>8</p>
+</td>
+<td style="width: 57px;">
+<p>5,25</p>
+</td>
+</tr>
+<tr>
+<td style="width: 49px;">
+<p>4</p>
+</td>
+<td style="width: 41px;">
+<p>4,26</p>
+</td>
+<td style="width: 30px;">
+<p>4</p>
+</td>
+<td style="width: 40px;">
+<p>3,1</p>
+</td>
+<td style="width: 33px;">
+<p>4</p>
+</td>
+<td style="width: 35px;">
+<p>5,39</p>
+</td>
+<td style="width: 41px;">
+<p>19</p>
+</td>
+<td style="width: 57px;">
+<p>12,5</p>
+</td>
+</tr>
+<tr>
+<td style="width: 49px;">
+<p>12</p>
+</td>
+<td style="width: 41px;">
+<p>10,84</p>
+</td>
+<td style="width: 30px;">
+<p>12</p>
+</td>
+<td style="width: 40px;">
+<p>9,11</p>
+</td>
+<td style="width: 33px;">
+<p>12</p>
+</td>
+<td style="width: 35px;">
+<p>8,15</p>
+</td>
+<td style="width: 41px;">
+<p>8</p>
+</td>
+<td style="width: 57px;">
+<p>5,56</p>
+</td>
+</tr>
+<tr>
+<td style="width: 49px;">
+<p>7</p>
+</td>
+<td style="width: 41px;">
+<p>4,82</p>
+</td>
+<td style="width: 30px;">
+<p>7</p>
+</td>
+<td style="width: 40px;">
+<p>7,26</p>
+</td>
+<td style="width: 33px;">
+<p>7</p>
+</td>
+<td style="width: 35px;">
+<p>6,42</p>
+</td>
+<td style="width: 41px;">
+<p>8</p>
+</td>
+<td style="width: 57px;">
+<p>7,91</p>
+</td>
+</tr>
+<tr>
+<td style="width: 49px;">
+<p>5</p>
+</td>
+<td style="width: 41px;">
+<p>5,68</p>
+</td>
+<td style="width: 30px;">
+<p>5</p>
+</td>
+<td style="width: 40px;">
+<p>4,74</p>
+</td>
+<td style="width: 33px;">
+<p>5</p>
+</td>
+<td style="width: 35px;">
+<p>5,73</p>
+</td>
+<td style="width: 41px;">
+<p>8</p>
+</td>
+<td style="width: 57px;">
+<p>6,89</p>
+</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Stat</th>
+<th>X</th>
+<th>Y</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mean</td>
+<td>9.0</td>
+<td>7.5</td>
+</tr>
+<tr>
+<td>StdVar</td>
+<td>3.317</td>
+<td>2.03</td>
+</tr>
+</tbody>
+</table>
 Linear Regression Y2 = 3 + 0.5 X
 
 
