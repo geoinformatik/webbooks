@@ -456,3 +456,14 @@ Characteristics governing the use of retina variables
 *  Quantitative numerically identify the distance between objects
 *  Length is a property of all characteristics specifying the number of possible classes
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/visualVariableCompar.jpg)
+
+## Optimise the Data-Ink ratio
+(Data ink/total ink used in graph)
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/dataInk.jpg)
+
+## The effectiveness of different graphical encoding  methods
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/graphicalEncodingCompare.jpg)
+
+> Cleveland & McGill 1984 
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/graphicalEncodingCompCleveland.jpg)
+
