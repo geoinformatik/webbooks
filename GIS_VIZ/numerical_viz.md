@@ -462,8 +462,18 @@ Characteristics governing the use of retina variables
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/dataInk.jpg)
 
 ## The effectiveness of different graphical encoding  methods
-![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/graphicalEncodingCompare.jpg)
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/graphicalEncodingCompare.png)
 
 > Cleveland & McGill 1984 
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/graphicalEncodingCompCleveland.jpg)
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/graphicalEncodingCompCleveland_2.jpg)
+
+## Utilising the knowledge
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/EncodingForWhat.png)
+
+## Expressiveness
+> Jock Mackinlay 1986 
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/Expressiveness.jpg)
+A visualizations should  express all the facts in the set of data, and only the facts in the data.
+
 
