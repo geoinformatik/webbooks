@@ -5,20 +5,20 @@
 * What are the characteristics of a good Visual Narrative ?
 * The purposeful conversion of numbers to visual narratives.
 
-# Four ways to communicate numbers
+## Four ways to communicate numbers
 * Tabular form
 * Summery statistics Mean, variance etc.
 * Inferential statistics Identifying significant differences
 * Visualization (Visual narrative)
 
-# Why Data Visualisation
+## Why Data Visualisation
 * The brain is a fantastic visual pattern processing machine. 
 * We are able to effortless detect minute variations from a patten
 * Visualisation is a ”effective way of laying open the data to display the unanticipated
 
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/num_viz1.jpg)
 
-# Laying data open to display the unanticipated.
+## Laying data open to display the unanticipated.
 > (Anscombe 1973)
 
 
@@ -383,7 +383,7 @@ Linear Regression Y2 = 3 + 0.5 X
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/graph_set%20A-D.png)
 
 
-# What are the characteristics of a good visualisation?
+## What are the characteristics of a good visualisation?
 1. Expressive The truth, the hole truth and nothing but the truth.
 2. Efficient Focus the attention on the important aspects.
 3. A good visualisation is the right tool for the job.
@@ -391,7 +391,7 @@ Linear Regression Y2 = 3 + 0.5 X
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/graph.jpg)
 
 
-# What are the characteristics of a good visual narrative?
+## What are the characteristics of a good visual narrative?
 * Engages the reader.
 * Is esthetical pleasing.
 * Should be memorable.
@@ -399,3 +399,39 @@ Linear Regression Y2 = 3 + 0.5 X
 * Not compromising the rules of a good visualisation
 
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/diamands.jpg)
+
+# What to consider when designing a data visualisation
+There are several classical texts that addresses the question of what is a good visualization 
+* J. Bertin  1967
+  Retina (visual ) variables and their Characteristics
+* Edward Tufte 1983
+  Optimise the Data-Ink ratio
+*Cleveland & McGill 1984 
+  Empirical estimates of the effectiveness of different graphical encoding  methods:
+* Jock Mackinlay 1986 
+  Two measures for choosing the right visualisation :
+  Expressiveness
+  Effectiveness
+  
+## Defining color
+*  RGB: Monitors
+*  CMYK : Printers
+*  LAB : Human vision simulation (Adobe)
+*  HSV (HSL/HSB) : Mapping applications ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/hsv.jpg)
+*  Predefined colour schemes:
+
+## Colour schemas
+*  Discreet schemas:
+  Each colour should be distinct and typical for its name
+  ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/Discreet_schemas.jpg)
+* Continuous schemas
+  Problem which colour represents the high value and ido we see it as linear. The four main types:
+  * Multi hue or spectrum schemas:![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/SpecturalSchemas.jpg)
+  * Bifocal colour schemas:![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/BifocalSchemas.jpg)
+  * Bifocal over white : ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/Bifocal_WhteSchemas.jpg)
+  * Mono hue schemas : ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/MonoHuelSchemas.jpg)
+  
+For example on colour schemas on maps see http://colorbrewer2.org/
+
+
+
