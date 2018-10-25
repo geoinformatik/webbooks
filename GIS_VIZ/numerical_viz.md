@@ -473,7 +473,24 @@ Characteristics governing the use of retina variables
 
 ## Expressiveness
 > Jock Mackinlay 1986 
-![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/Expressiveness.jpg)
 A visualizations should  express all the facts in the set of data, and only the facts in the data.
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/Expressiveness.jpg)
+
+## Effectiveness
+> Jock Mackinlay 1986
+*  Convey information in a way that is readily perceived 
+*  A combination of Tufte’s Data-ink ratio and Cleveland & McGill measures of accuracy in reading
+*  It is not about how mush data you can put into the visualisation but how much the reader gets out.
+*  Think of the visualisation as a tool does it do what the user wants
+
+
+## What's wrong ?
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/wrong.jpg)
+
+1  Ontology (mix of desktop and phones)
+2  Chart :Stacked lengths (type5)
+3  Chart: % in a rapidly growing dataset.
+
+
 
 
