@@ -1,134 +1,145 @@
-    * {
-        box-sizing: border-box;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 300;
-    }
+  * {
+     box-sizing: border-box;
+     font-family: 'Open Sans', sans-serif;
+     font-weight: 300;
+ }
 
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
+ a {
+     text-decoration: none;
+     color: inherit;
+ }
 
-    p {
-        font-size: 1.1em;
-        margin: 1em 0;
-    }
+ p {
+     font-size: 1.1em;
+     margin: 1em 0;
+ }
 
-    .description {
-        margin: 1em auto 2.25em;
-    }
+ .description {
+     margin: 1em auto 2.25em;
+ }
 
-    body {}
+ body {}
 
-    .close {
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
+ .close {
+     position: absolute;
+     left: 0;
+     top: 0;
+ }
 
-    h1 {
-        font-family: 'Pacifico', cursive;
-        font-weight: 400;
-        font-size: 2.5em;
-    }
+ h1 {
+     font-family: 'Pacifico', cursive;
+     font-weight: 400;
+     font-size: 2.5em;
+ }
 
-   .accordion ul {
-        list-style: none;
-        padding-left: 0.1em;
-    }
+ .accordion {
+     list-style: none;
+     padding-left: 0.1em;
+ }
 
-   .accordion ul .inner {
-        padding-left: 1em;
-        overflow: hidden;
-        display: none;
-    }
+li.tocList{
+    list-style: none;
+     padding-left: 0.1em;  
+}
 
-  .accordion  ul .inner.show {
-        /*display: block;*/
-    }
+ ul .inner {
+     padding-left: 1em;
+     overflow: hidden;
+     display: none;
+ }
 
-   .accordion ul li {
-        margin: 0.5em 0;
-    }
+ul .inner.show {
+     /*display: block;*/
+ }
 
-    .accordion a.fragment {
-        /*  width: 100%;*/
-        display: block;
-        background: rgba(150, 0, 0, 0.78);
-        color: #fefefe;
-        padding: 0.5em;
-        border-radius: 0.15em;
-        transition: background 0.3s ease;
-    }
+ .accordion ul li {
+     margin: 0.5em 0;
+ }
 
-   .accordion a.tocRef.active {
-        /*  width: 100%;*/
-        display: block;
-        background: rgba(255, 150, 0, 0.78);
-        color: #fefefe;
-        padding: 0.1em;
-        border-radius: 0.15em;
-        transition: background 0.3s ease;
-    }
+ a.fragment {
+     /*  width: 100%;*/
+     display: block;
+     background: rgba(150, 0, 0, 0.78);
+     color: #fefefe;
+     padding: 0.5em;
+     border-radius: 0.15em;
+     transition: background 0.3s ease;
+ }
 
-   .accordion a.tocRef {
-        /*  width: 100%;*/
-        display: block;
-        background: rgba(50, 150, 0, 0.78);
-        color: #fefefe;
-        padding: 0.1em;
-        border-radius: 0.15em;
-        transition: background 0.3s ease;
-    }
+ a.tocRef.active {
+     /*  width: 100%;*/
+     display: block;
+     background: rgba(255, 150, 0, 0.78);
+     color: #fefefe;
+     padding: 0.1em;
+     border-radius: 0.15em;
+     transition: background 0.3s ease;
+ }
 
-    .mainContainer {
+ a.tocRef {
+     /*  width: 100%;*/
+     display: block;
+     background: rgba(50, 150, 0, 0.78);
+     color: #fefefe;
+     padding: 0.1em;
+     border-radius: 0.15em;
+     transition: background 0.3s ease;
+ }
 
-        height: 100vh;
-        /*border: solid thin black; */
-        overflow: scroll;
-    }
-.accordion{
-        
-        height: 100vh;
-        border: solid thin black;
-        overflow: scroll;
-    }
+ .mainContainer {
 
+     height: 100vh;
+     /*border: solid thin black; */
+     overflow: scroll;
+ }
 
-    ul li a.section {
-        /*  width: 100%;*/
-        display: block;
-        background: rgba(0, 0, 0, 0.78);
-        color: #fefefe;
-        padding: 0.5em;
-        border-radius: 0.15em;
-        transition: background 0.3s ease;
-    }
+ .accordion {
 
-    ul li a.section:hover {
-        background: rgba(0, 0, 0, 0.9);
-    }
+     height: 100vh;
+     border: solid thin black;
+     overflow: scroll;
+ }
 
 
+ ul li a.section {
+     /*  width: 100%;*/
+     list-style: none;
+     padding-left: 0.1em;
+     display: block;
+     background: rgba(0, 0, 0, 0.78);
+     color: #fefefe;
+     padding: 0.5em;
+     border-radius: 0.15em;
+     transition: background 0.3s ease;
+ }
 
-    .fixed {
-        width: 640;
-        background-color: blue;
-        color: white;
-        padding: 3px;
-        position: fixed;
-        /*    position:absolute;*/
-        bottom: 0;
-        right: 0;
-    }
-    .fixed.show {
-        width: 40px;
-        height: 40px;
-        background-color: red;
-        color: white;
-        padding: 3px;
-        position: fixed;
-        /*    position:absolute;*/
-        bottom: 0;
-        right: 0;
-    }
+ ul li a.section:hover {
+     list-style: none;
+     padding-left: 0.1em;
+     background: rgba(0, 0, 0, 0.9);
+ }
+
+
+
+ .fixed {
+     width: 640;
+     background-color: blue;
+     color: white;
+     padding: 3px;
+     position: fixed;
+     /*    position:absolute;*/
+     bottom: 0;
+     right: 0;
+ }
+
+ .fixed.show {
+     width: 40px;
+     height: 40px;
+     background-color: red;
+     color: white;
+     padding: 3px;
+     position: fixed;
+     /*    position:absolute;*/
+     bottom: 0;
+     right: 0;
+ }
