@@ -5,12 +5,6 @@
 
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/KnowlageTriangel.jpg)
 
-
-![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/test.svg)
-
-
-
-
 # How data represents information
 *  Data as we use it typically comes in the form of <strong><span style="color: #0000ff;">values</span></strong> that define <strong><span style="color: #ff0000;">properties</span></strong> of <strong><span style="color: #ff00ff;">entities</span></strong>. i.e. the<strong><span style="color: #ff0000;"> highest completed education</span></strong> of <strong><span style="color: #ff00ff;">person_1</span></strong> is a <strong><span style="color: #0000ff;">masters program</span></strong>.
 *  Another bit of data could specify that the <strong><span style="color: #ff0000;">gender</span></strong> of <strong><span style="color: #ff00ff;">person_1</span></strong> is <strong><span style="color: #0000ff;">female</span></strong>.
@@ -70,4 +64,6 @@
 </tbody>
 </table>
 
+# Types of data
 
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/data.svg)
