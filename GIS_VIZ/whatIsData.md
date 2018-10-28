@@ -69,19 +69,34 @@
 
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/data.svg)
 
-## Unstructured data
+# Unstructured data
 > Cardiff After DarkBy Maciej Dakowicz
 
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/unstructuredData.jpg)
 
-## What makes time different
+# What makes time different
 * Entities can change property values over time, it is however seldom time it self that promotes the changes.
 * Time can be seen as both a quantitative (continues) and a categorical (discreet)
 
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/chronoData1.jpg)
+
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/cronodata2a.jpg)
+
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/cronodata2b.jpg)
 
+
+# What makes spatial data different
+* Spatial data is represented as complex data.  Spatial data can depending on the situation be analysed as:
+  * Categorical,
+  * Quantitative
+  * Unstructured
+* Spatial data has special operators such as neighbourhood
+* In visualisations spatial data  consumes the x-y dimension meaning that this dimension can not be used for other data.
+
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/spatialData1.png)
+
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/spatialdata2.jpg)
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/spatialdata3.jpg)
 
 # Wide tables
 
