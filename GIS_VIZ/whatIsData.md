@@ -105,6 +105,21 @@
 * Raster data: Represents space by subdividing it into small squares and assigning a property value to each square  ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/typesofspatialdata2.jpg)
 * Non spatial data can easily be joined to spatial data if they have a common key (property) ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/typesofspatialdata3.jpg)
 
+# Aggregated properties
+* Properties can either be measured properties or aggregated properties.
+* Quantitative properties are typically aggregated in terms of :
+  * Central tendency: average, meridian, sum 
+  * Variation: StdDev
+* Categorical properties are typical aggregates in terms of count and percentage.
+
+# Organising aggregated data
+* A common model of aggregated is a multidimensional data cube. 
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/oranisingAggragateddata.jpg)
+
+* In this concept the categorical properties function as dimensions while their unique valued define size.
+* If there are more than one quantitative property in the dataset the names of these properties also appear as dimensions.
+* The values of the dataset occupy the cells of the cube.
+
 
 # Wide tables
 
