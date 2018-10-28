@@ -67,3 +67,261 @@
 # Types of data
 
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/data.svg)
+
+## Unstructured data
+> Cardiff After DarkBy Maciej Dakowicz
+
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/unstructuredData.jpg)
+
+# Wide tables
+
+* The dimensions in aggregated data can easily become rather large. 
+* If you want to combine several dimensions the resulting tabular representation will have extremely many columns and are therefore called wide tables.
+
+# Long tables
+* The Principal of a long table is to have one column for each dimension of the data set and one column for value. 
+ 
+ <table width="886">
+<tbody>
+<tr>
+<td width="203">
+<p><strong>Municipality</strong></p>
+</td>
+<td width="401">
+<p><strong>Education</strong></p>
+</td>
+<td width="111">
+<p><strong>Gender</strong></p>
+</td>
+<td width="80">
+<p><strong>Year</strong></p>
+</td>
+<td width="91">
+<p><strong>Value</strong></p>
+</td>
+</tr>
+<tr>
+<td width="203">
+<p>Kerteminde</p>
+</td>
+<td width="401">
+<p>Social science, SCE</p>
+</td>
+<td width="111">
+<p>Men</p>
+</td>
+<td width="80">
+<p>2017</p>
+</td>
+<td width="91">
+<p>62</p>
+</td>
+</tr>
+<tr>
+<td width="203">
+<p>Kerteminde</p>
+</td>
+<td width="401">
+<p>Social science, SCE</p>
+</td>
+<td width="111">
+<p>Women</p>
+</td>
+<td width="80">
+<p>2006</p>
+</td>
+<td width="91">
+<p>57</p>
+</td>
+</tr>
+<tr>
+<td width="203">
+<p>Langeland</p>
+</td>
+<td width="401">
+<p>Primary school 7th-9th grade</p>
+</td>
+<td width="111">
+<p>Men</p>
+</td>
+<td width="80">
+<p>2016</p>
+</td>
+<td width="91">
+<p>1034</p>
+</td>
+</tr>
+<tr>
+<td width="203">
+<p>Langeland</p>
+</td>
+<td width="401">
+<p>Primary school 7th-9th grade</p>
+</td>
+<td width="111">
+<p>Men</p>
+</td>
+<td width="80">
+<p>2017</p>
+</td>
+<td width="91">
+<p>1016</p>
+</td>
+</tr>
+<tr>
+<td width="203">
+<p>Langeland</p>
+</td>
+<td width="401">
+<p>Primary school 7th-9th grade</p>
+</td>
+<td width="111">
+<p>Women</p>
+</td>
+<td width="80">
+<p>2006</p>
+</td>
+<td width="91">
+<p>1337</p>
+</td>
+</tr>
+<tr>
+<td width="203">
+<p>Langeland</p>
+</td>
+<td width="401">
+<p>Construction (TBT)</p>
+</td>
+<td width="111">
+<p>Men</p>
+</td>
+<td width="80">
+<p>2016</p>
+</td>
+<td width="91">
+<p>462</p>
+</td>
+</tr>
+<tr>
+<td width="203">
+<p>Langeland</p>
+</td>
+<td width="401">
+<p>Construction (TBT)</p>
+</td>
+<td width="111">
+<p>Women</p>
+</td>
+<td width="80">
+<p>2006</p>
+</td>
+<td width="91">
+<p>22</p>
+</td>
+</tr>
+<tr>
+<td width="203">
+<p>Langeland</p>
+</td>
+<td width="401">
+<p>Construction (TBT)</p>
+</td>
+<td width="111">
+<p>Women</p>
+</td>
+<td width="80">
+<p>2007</p>
+</td>
+<td width="91">
+<p>24</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+# Slicing and dicing long tables
+* Long tables are much more flexible when it comes to slicing and dicing large data amounts.
+* Long tables need to be sliced and diced before use typically by using in pivot tables/graphs in a spreadsheet or in specialised visualisation tools such as tableau.
+* In QGIS you can use the “group statistics” plugin to slice and dice long tables.
+* For statistical data it is also often possible to slice and dice before downloading the data.
+
+
+
+
+<table width="825">
+<tbody>
+<tr>
+<td width="149">
+<p><strong>Municipality</strong></p>
+</td>
+<td width="159">
+<p><strong>Year_1 &ndash; Education_1</strong></p>
+</td>
+<td width="105">
+<p><strong>Year_1 - &hellip;</strong></p>
+</td>
+<td width="156">
+<p><strong>Year_1 &ndash;</strong></p>
+<p><strong>Education_N</strong></p>
+</td>
+<td width="96">
+<p><strong>&hellip;.</strong></p>
+</td>
+<td width="161">
+<p><strong>Year_N</strong><strong>-</strong></p>
+<p><strong>Education_N</strong></p>
+</td>
+</tr>
+<tr>
+<td width="149">
+<p>Copenhagen</p>
+</td>
+<td width="159">
+<p>50</p>
+</td>
+<td width="105">
+<p>130</p>
+</td>
+<td width="156">
+<p>1138</p>
+</td>
+<td width="96">
+<p>&hellip;.</p>
+</td>
+<td width="161">
+<p>556</p>
+</td>
+</tr>
+<tr>
+<td width="149">
+<p>Roskilde</p>
+</td>
+<td width="159">
+<p>2</p>
+</td>
+<td width="105">
+<p>10</p>
+</td>
+<td width="156">
+<p>437</p>
+</td>
+<td width="96">
+<p>&hellip;..</p>
+</td>
+<td width="161">
+<p>12</p>
+</td>
+</tr>
+<tr>
+<td width="149">
+<p>&hellip;.</p>
+</td>
+<td width="159">&nbsp;</td>
+<td width="105">&nbsp;</td>
+<td width="156">&nbsp;</td>
+<td width="96">&nbsp;</td>
+<td width="161">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+
