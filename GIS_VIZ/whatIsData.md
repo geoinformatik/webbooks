@@ -79,8 +79,8 @@
 * Time can be seen as both a quantitative (continues) and a categorical (discreet)
 
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/chronoData1.jpg)
-![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/chronoData2a.jpg)
-![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/chronoData2b.jpg)
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/chronodata2a.jpg)
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/chronodata2b.jpg)
 
 
 # Wide tables
