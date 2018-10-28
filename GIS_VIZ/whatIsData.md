@@ -102,8 +102,10 @@
 * A rather simplistic 3 layer classified: 
 * Vector data: The geometry of the entity is represented as a point, line or polygon. 
 ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/typesofspatiaData1.jpg)
-* Raster data: Represents space by subdividing it into small squares and assigning a property value to each square  ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/typesofspatialdata2.jpg)
-* Non spatial data can easily be joined to spatial data if they have a common key (property) ![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/typesofspatialdata3.jpg)
+* Raster data: Represents space by subdividing it into small squares and assigning a property value to each square
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/typesofspatialdata2.jpg)
+* Non spatial data can easily be joined to spatial data if they have a common key (property
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/typesofspatialdata3.jpg)
 
 # Aggregated properties
 * Properties can either be measured properties or aggregated properties.
