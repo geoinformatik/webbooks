@@ -128,6 +128,85 @@
 * The dimensions in aggregated data can easily become rather large. 
 * If you want to combine several dimensions the resulting tabular representation will have extremely many columns and are therefore called wide tables.
 
+<table width="825">
+<tbody>
+<tr>
+<td width="149">
+<p><strong>Municipality</strong></p>
+</td>
+<td width="159">
+<p><strong>Year_1 &ndash; Education_1</strong></p>
+</td>
+<td width="105">
+<p><strong>Year_1 - &hellip;</strong></p>
+</td>
+<td width="156">
+<p><strong>Year_1 &ndash;</strong></p>
+<p><strong>Education_N</strong></p>
+</td>
+<td width="96">
+<p><strong>&hellip;.</strong></p>
+</td>
+<td width="161">
+<p><strong>Year_N</strong><strong>-</strong></p>
+<p><strong>Education_N</strong></p>
+</td>
+</tr>
+<tr>
+<td width="149">
+<p>Copenhagen</p>
+</td>
+<td width="159">
+<p>50</p>
+</td>
+<td width="105">
+<p>130</p>
+</td>
+<td width="156">
+<p>1138</p>
+</td>
+<td width="96">
+<p>&hellip;.</p>
+</td>
+<td width="161">
+<p>556</p>
+</td>
+</tr>
+<tr>
+<td width="149">
+<p>Roskilde</p>
+</td>
+<td width="159">
+<p>2</p>
+</td>
+<td width="105">
+<p>10</p>
+</td>
+<td width="156">
+<p>437</p>
+</td>
+<td width="96">
+<p>&hellip;..</p>
+</td>
+<td width="161">
+<p>12</p>
+</td>
+</tr>
+<tr>
+<td width="149">
+<p>&hellip;.</p>
+</td>
+<td width="159">&nbsp;</td>
+<td width="105">&nbsp;</td>
+<td width="156">&nbsp;</td>
+<td width="96">&nbsp;</td>
+<td width="161">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/wideTables1.jpg)
+
+
 # Long tables
 * The Principal of a long table is to have one column for each dimension of the data set and one column for value. 
  
@@ -295,83 +374,9 @@
 * In QGIS you can use the “group statistics” plugin to slice and dice long tables.
 * For statistical data it is also often possible to slice and dice before downloading the data.
 
+![](https://geoinformatik.github.io/webbooks/GIS_VIZ/viz_res/sliceDice.jpg)
 
 
 
-<table width="825">
-<tbody>
-<tr>
-<td width="149">
-<p><strong>Municipality</strong></p>
-</td>
-<td width="159">
-<p><strong>Year_1 &ndash; Education_1</strong></p>
-</td>
-<td width="105">
-<p><strong>Year_1 - &hellip;</strong></p>
-</td>
-<td width="156">
-<p><strong>Year_1 &ndash;</strong></p>
-<p><strong>Education_N</strong></p>
-</td>
-<td width="96">
-<p><strong>&hellip;.</strong></p>
-</td>
-<td width="161">
-<p><strong>Year_N</strong><strong>-</strong></p>
-<p><strong>Education_N</strong></p>
-</td>
-</tr>
-<tr>
-<td width="149">
-<p>Copenhagen</p>
-</td>
-<td width="159">
-<p>50</p>
-</td>
-<td width="105">
-<p>130</p>
-</td>
-<td width="156">
-<p>1138</p>
-</td>
-<td width="96">
-<p>&hellip;.</p>
-</td>
-<td width="161">
-<p>556</p>
-</td>
-</tr>
-<tr>
-<td width="149">
-<p>Roskilde</p>
-</td>
-<td width="159">
-<p>2</p>
-</td>
-<td width="105">
-<p>10</p>
-</td>
-<td width="156">
-<p>437</p>
-</td>
-<td width="96">
-<p>&hellip;..</p>
-</td>
-<td width="161">
-<p>12</p>
-</td>
-</tr>
-<tr>
-<td width="149">
-<p>&hellip;.</p>
-</td>
-<td width="159">&nbsp;</td>
-<td width="105">&nbsp;</td>
-<td width="156">&nbsp;</td>
-<td width="96">&nbsp;</td>
-<td width="161">&nbsp;</td>
-</tr>
-</tbody>
-</table>
+
 
